@@ -46,6 +46,6 @@ sentence = "Astounding aardvarks, arguably an ancient animal, always ate apples 
 
 # Swap all `A` for `O`, as well as all `a` for `o`. You need to chain `gsub`s.
 
-sentence = sentence new_str "A=0"+"a=o"
-
+sentence = sentence.tr('A','O')
+sentence = sentence.tr('a','o')
 puts sentence
